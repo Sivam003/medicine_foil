@@ -58,3 +58,13 @@ Follow these steps to set up and run the project locally:
    ```bash
    git clone https://github.com/your-username/foil-finder.git
    cd foil-finder
+2. **Install required libraries**
+   ```bash
+   pip install flask opencv-python easyocr pandas fuzzywuzzy python-Levenshtein
+3. **Add the Dataset**
+   Place the Medicine_Details.csv file in the root directory. This file contains the medicine names and compositions.
+4. **Run the Project**
+   ```bash
+   python app.py
+5, **Access the website**
+   Open a browser and visit http://127.0.0.1:5000/.
