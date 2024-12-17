@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foil Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Medicine Finder</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Identify Medicine from Torn Foil</h2>
+            <p>Upload an image of torn foil, and we'll identify the medicine using AI</p>
+            <button id="uploadButton">Upload Foil Image</button>
+            <input type="file" id="fileInput" accept="image/*" style="display:none;">
+        </section>
+
+        <section id="result" class="result">
+            <!-- Prediction result will appear here -->
+            <div id="loading" style="display: none;">Processing...</div>
+            <div id="output"></div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Medicine Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
