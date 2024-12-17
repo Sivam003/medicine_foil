@@ -1,31 +1,60 @@
-🎥 Project Title: Medicine Foil Name Detection Using AI 📷💊
+# **Medicine Foil Name Detection Using AI 📷💊**
 
-🚀 About the Project:
-This project demonstrates an AI-based system that detects and predicts the name of medicines from torn foil images. Using cutting-edge tools like OpenCV, EasyOCR, and Flask, the project processes uploaded images, extracts text, and accurately identifies medicine names. It’s a perfect integration of Machine Learning, Computer Vision, and Web Development.
+This project is an AI-based system that identifies the name of medicines from torn foil images using **OpenCV**, **EasyOCR**, and **Flask**. It combines **Computer Vision**, **Optical Character Recognition (OCR)**, and **Machine Learning** for accurate and efficient medicine name prediction.
 
-🛠️ Technologies Used:
-Front-end: HTML, CSS, Flask (Web Framework)
-Back-end: Python, OpenCV, EasyOCR, Pandas, FuzzyWuzzy
-Tools: Visual Studio Code, Google Chrome
-Hardware Requirements: Minimum 4GB RAM, Windows 10 / Ubuntu 20.04
+---
 
-📋 Project Workflow:
+## **Project Workflow 🛠️**
 
-Upload a torn medicine foil image.
-Image preprocessing using OpenCV (grayscale conversion, noise removal, etc.).
-Text extraction using EasyOCR for optical character recognition.
-Matching extracted text with a database of medicines using Pandas and FuzzyWuzzy.
-Display the predicted medicine name.
-User-friendly interface powered by Flask.
-💡 Key Features:
-✅ Upload torn medicine foil images.
-✅ Fast and accurate prediction of medicine names.
-✅ Real-time buffer icon ("Processing...") while the image is being analyzed.
-✅ Seamless integration of AI and web development tools.
+1. **Image Upload**:  
+   The user uploads a torn medicine foil image via the web interface.  
 
-📚 What You Will Learn:
+2. **Preprocessing with OpenCV**:  
+   - Converts the image to grayscale.  
+   - Reduces noise for better text detection.  
+   - Enhances image features for OCR.  
 
-How to integrate OpenCV for image preprocessing.
-Using EasyOCR for text recognition.
-Building a complete AI-based project with Flask as the web framework.
-Combining data analysis libraries like Pandas and FuzzyWuzzy.
+3. **Text Extraction with EasyOCR**:  
+   - OCR extracts readable text from the foil image.  
+
+4. **Text Matching**:  
+   - Extracted text is compared with a predefined database using **Pandas** and **FuzzyWuzzy** for similarity scoring.  
+
+5. **Prediction Display**:  
+   - The predicted medicine name is displayed to the user.  
+   - A "Processing..." buffer animation is shown during image analysis.  
+
+---
+
+## **Technologies Used 🚀**
+
+### **Software**  
+- **Front-end**:  
+  - **HTML**: For structuring the web interface.  
+  - **CSS**: For styling and responsive design.  
+  - **JavaScript**: To add interactivity and display buffer animations.  
+- **Back-end**:  
+  - **Flask**: Lightweight Python web framework to handle requests and responses.  
+  - **Python Libraries**:  
+    - **OpenCV**: For image preprocessing and enhancement.  
+    - **EasyOCR**: For text extraction from images.  
+    - **Pandas**: To handle and manipulate the medicine dataset.  
+    - **FuzzyWuzzy**: For fuzzy matching of extracted text with the dataset.  
+
+### **Hardware**  
+- **RAM**: Minimum 4 GB  
+- **Hard Disk**: Minimum 1 GB of free space  
+- **Operating System**: Windows 10 / Ubuntu 20.04  
+- **Editor**: Visual Studio Code / PyCharm  
+- **Browser**: Google Chrome  
+
+---
+
+## **Project Setup and Installation ⚙️**
+
+Follow these steps to set up and run the project locally:
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/foil-finder.git
+   cd foil-finder
